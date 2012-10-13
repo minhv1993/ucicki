@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Uci Circle K</title>
 </head>
-
-<body>
-</body>
-</html>
+<body id="body">
+	<!-- the header contain all the thing that the all the pages have in common on the top, like the UCI logo, and the nav bar-->
+	<div id="header">
+    </div>
