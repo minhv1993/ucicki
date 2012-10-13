@@ -7,4 +7,5 @@
 <body id="body">
 	<!-- the header contain all the thing that the all the pages have in common on the top, like the UCI logo, and the nav bar-->
 	<div id="header">
+		This is the header
     </div>
