@@ -14,13 +14,13 @@ body {
 }
 
 #header {
-	height: 180px;
+	height: 150px;
 	position:relative;
 }
 
 #header #logo {
 	position:absolute;
-	bottom: -30px;
+	bottom: -40px;
 	left: 40px;
 }
 
@@ -29,7 +29,36 @@ body {
 	background-image:url('../images/uciNeverland.png');
 }
 
+#entersite {
+	height: 200px;
+}
+
+#weeklyevents {
+	width:900px;
+	height:400px;
+	margin: 0 auto;
+	background-color:rgba(0,0,0,0.5);
+}
+
 #footer {
-	background:#777;
 	height: 80px;
+	position:relative;
+}
+
+#logos {
+	position:absolute;
+	left: 40px;
+	top:-60px;
+}
+
+.logo {
+	width:100px;
+	height:100px;
+}
+
+#copyright {
+	position:absolute;
+	color:#9CF;
+	left:100px;
+	top:50px;
 }
