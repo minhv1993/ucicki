@@ -2,5 +2,6 @@
 	<div id="footer">
 		This is the the footer
     </div>
+    </div>
 </body>
 </html>

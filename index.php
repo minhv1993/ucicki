@@ -1,5 +1,5 @@
 <?php include('header.php'); ?>
-<div id="wrapper">
-	This is the main contents
+<div id="container">
+	
 </div>
 <?php include('footer.php'); ?>
