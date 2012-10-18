@@ -1,44 +1,81 @@
-function customcursor(element,imgUrl) {
-	$('body').append('<img style="position:absolute;display:none;cursor:none;" id="mycursor" src="'+imgUrl+'" />');
-	$('#mycursor').show();
-	$(window).mousemove(function(e){
-		$('#mycursor').css('left', e.pageX - 16).css('top', e.pageY - 16);
-	});
-}
+/* Jquery function 
+ * Author: Minhnhut Vo
+ * Created Date: 10/12/12
+ */
 
 function chasingShadow(){
 	var element = $("#ppshadow");
-	var width = $("#container").width() - 100;
-	var height = $("#container").height() - 150;
-	var centerX =  width/2;
-	var centerY = height/2;
+	var containerWidth = $("#container").width() - 100;
+	var containerHeight = $("#container").height() - 150;
+	var centerX = containerWidth/2;
+	var centerY = containerHeight/2;
 	
-	var top = Math.random() * height;
-	var left = Math.random() * width;
-	//element.animate({top:top,left:left});
-	if(left > centerX){
-		element.css('background-image','url(./images/ppshadowstandright.png)');
-	}else{
-		element.css('background-image','url(./images/ppshadowstandleft.png)');
+	var oldTop = element.position().top;
+	var oldLeft = element.position().left;
+	var newTop = Math.random() * containerHeight;
+	var newLeft = Math.random() * containerWidth;
+	var moveUp = newTop - oldTop;
+	var moveLeft = newLeft - oldLeft;
+	// To bottom right
+	if(moveUp > 0 && moveLeft > 0) {
+		element.css('background-image','url(./images/ppshadowright.png)');
+		element.animate({top: '+='+moveUp,left: '+='+moveLeft}, 200, function(){
+			element.css('background-image','url(./images/ppshadowstandright.png)');
+			element.data('nomouse', false);
+		});
 	}
-	element.css('top',top+'px').css('left',left+'px');
+	// To top left
+	else if(moveUp < 0 && moveLeft < 0) {
+		moveUp = Math.abs(moveUp);
+		moveLeft = Math.abs(moveLeft);
+		element.css('background-image','url(./images/ppshadowleft.png)');
+		element.animate({top: '-='+moveUp,left: '-='+moveLeft}, 200, function(){
+			element.css('background-image','url(./images/ppshadowstandleft.png)');
+			element.data('nomouse', false);
+		});
+	}
+	// To bottom left
+	else if(moveUp > 0 && moveLeft < 0){
+		moveLeft = Math.abs(moveLeft);
+		element.css('background-image','url(./images/ppshadowleft.png)');
+		element.animate({top: '+='+moveUp,left: '-='+moveLeft}, 200, function(){
+			element.css('background-image','url(./images/ppshadowstandleft.png)');
+			element.data('nomouse', false);
+		});
+	}
+	// To top right
+	else{
+		moveUp = Math.abs(moveUp);
+		element.css('background-image','url(./images/ppshadowright.png)');
+		element.animate({top: '-='+moveUp,left: '+='+moveLeft}, 200, function(){
+			element.css('background-image','url(./images/ppshadowstandright.png)');
+			element.data('nomouse', false);
+		});
+	}
 }
 
 $(document).ready(function() {
 	var tinkerCursor = false;
 	$("#tinker").click(function(){
 		if(tinkerCursor == false){
-			customcursor($('#body'),'./images/tinkerCursor.gif');
+			$('body').addClass("tinkerCursor");
 			tinkerCursor = true;
 			$("#tinker").css('background-image','none'	);
 		}else{
-			$('#mycursor').remove();
-			$("#body").css('cursor','auto');
+			$('body').removeClass("tinkerCursor");
 			tinkerCursor = false;
 			$("#tinker").css('background-image','url(./images/tinker.gif)');
 		}
 	});
 	
-	$("#ppshadow").mouseover(chasingShadow);
-	$("#ppshadow").mousemove(chasingShadow);
+	$("#ppshadow").mouseover(function(){
+		var el = $(this);
+		if(el.data('nomouse')) return;
+		el.data('nomouse', true);
+		chasingShadow();});
+	$("#ppshadow").mousemove(function(){
+		var el = $(this);
+		if(el.data('nomouse')) return;
+		el.data('nomouse', true);
+		chasingShadow();});
 });

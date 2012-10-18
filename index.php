@@ -6,6 +6,6 @@
 		<div id="fellowship"></div>
 		<div id="usefullinks"></div>
 	</div>
-	<input id="ppshadow" type="button" />
+	<div id="ppshadow"></div>
 </div>
 <?php include('footer.php'); ?>

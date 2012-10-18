@@ -7,11 +7,11 @@
 <script src="js/jquery.onload.js" type="text/javascript"></script>
 <title>Uci Circle K</title>
 </head>
-<body id="body">
+<body>
 	<div id="wrapper">
 	<!-- the header contain all the thing that the all the pages have in common on the top, like the UCI logo, and the nav bar-->
 	<div id="header">
 		<div id="logo"><a href="index.php"><img id="peteyLogo" src="images/peteyLogo.png" width="258px" height="165px" /></a></div>
-		<a id="tinker"/></a>
+		<div id="tinker"/></div>
 		<div id="navbar"></div>
     </div>
