@@ -9,9 +9,6 @@ body {
 .tinkerCursor{
 	cursor:url('../images/tinkerCursor.cur'),auto;
 }
-.pinCursor{
-	cursor:url('../images/pushpin.gif'),auto;
-}
 #wrapper {
 	width: 1200px;
 	background:#000;
@@ -39,16 +36,6 @@ body {
 	width:25px;
 	height:25px;
 	background:url('../images/tinker.gif') no-repeat;
-}
-
-#header #chaseShadow {
-	position:absolute;
-	left:145px;
-	top:30px;
-	z-index:999;
-	width:25px;
-	height:25px;
-	background:url('../images/pushpin.gif') no-repeat;
 }
 
 #container {
