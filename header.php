@@ -12,6 +12,6 @@
 	<!-- the header contain all the thing that the all the pages have in common on the top, like the UCI logo, and the nav bar-->
 	<div id="header">
 		<div id="logo"><a href="index.php"><img id="peteyLogo" src="images/peteyLogo.png" width="258px" height="165px" /></a></div>
-		<div id="tinker"></div><div id="chaseShadow"></div>
+		<div id="tinker"/></div>
 		<div id="navbar"></div>
     </div>
