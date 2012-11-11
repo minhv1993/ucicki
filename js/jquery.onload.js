@@ -1,3 +1,4 @@
+
 /* Jquery function 
  * Author: Minhnhut Vo
  * Created Date: 10/12/12
@@ -56,63 +57,26 @@ function chasingShadow(){
 
 $(document).ready(function() {
 	var tinkerCursor = false;
-	var pushpinCursor = false;
 	$("#tinker").click(function(){
 		if(tinkerCursor == false){
 			$('body').addClass("tinkerCursor");
-			$('body').removeClass("pinCursor");
 			tinkerCursor = true;
-			pushpinCursor = false;
 			$("#tinker").css('background-image','none'	);
-			$("#chaseShadow").css('background-image','url(./images/pushpin.gif)');
 		}else{
 			$('body').removeClass("tinkerCursor");
 			tinkerCursor = false;
 			$("#tinker").css('background-image','url(./images/tinker.gif)');
 		}
-		$('#ppshadow').remove();
 	});
 	
-	$("#chaseShadow").click(function(){
-		if(pushpinCursor == false){
-			$('body').addClass("pinCursor");
-			$('body').removeClass("tinkerCursor");
-			$('#container').append('<div id="ppshadow"></div>');
-			pushpinCursor = true;
-			tinkerCursor = false;
-			$("#chaseShadow").css('background-image','none'	);
-			$("#tinker").css('background-image','url(./images/tinker.gif)');
-			$("#ppshadow").mouseover(function(){
-				var el = $(this);
-				if(el.data('nomouse')) return;
-				el.data('nomouse', true);
-				chasingShadow();});
-			$("#ppshadow").mousemove(function(){
-				var el = $(this);
-				if(el.data('nomouse')) return;
-				el.data('nomouse', true);
-				chasingShadow();});
-			$("#ppshadow").click(function(){
-				var el = $(this);
-				el.stop();
-				alert("Yay, You helped Peter Pan catched his shadow!");
-				$('body').removeClass("pinCursor");
-				pushpinCursor = false;
-				$("#chaseShadow").css('background-image','url(./images/pushpin.gif)');
-				$('#ppshadow').remove()});
-		}else{
-			$('body').removeClass("pinCursor");
-			pushpinCursor = false;
-			$("#chaseShadow").css('background-image','url(./images/pushpin.gif)');
-			$('#ppshadow').remove()
-		}
-	});
-	
-	$('.ChillTip').ChillTip();
-	$('.ChillTip1').ChillTip({ 
-	CTBK:'#300', 
-	}
-	 
-	$("#toTop").click(function(){$("html, body").animate({scrollTop:0}, 1000);});
-	});
+	$("#ppshadow").mouseover(function(){
+		var el = $(this);
+		if(el.data('nomouse')) return;
+		el.data('nomouse', true);
+		chasingShadow();});
+	$("#ppshadow").mousemove(function(){
+		var el = $(this);
+		if(el.data('nomouse')) return;
+		el.data('nomouse', true);
+		chasingShadow();});
 });

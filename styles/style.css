@@ -10,9 +10,6 @@ body {
 .tinkerCursor{
 	cursor:url('../images/tinkerCursor.cur'),auto;
 }
-.pinCursor{
-	cursor:url('../images/pushpin.gif'),auto;
-}
 #wrapper {
 	width: 1200px;
 	background:#000;
@@ -218,6 +215,7 @@ a:hover {
 	-o-transform:skew(-20deg,-20deg) rotatey(-50deg);
 	transform:skew(-20deg,-20deg) rotatey(-50deg)
 }
+<<<<<<< HEAD
 
 /*Slider and nav bar */
 ul.sdt_menu{
@@ -446,3 +444,434 @@ ul.sdt_menu li div.sdt_box a:hover{
 	color:#fff;
 }
 
+=======
+#todaybox_2 {
+	background-color: #519FD7;
+	height: 210px;
+	width: 353px;
+}
+
+#tabcontent {
+	background-color: #519FD7;
+	height: 263px;
+	width: 832px;
+}
+
+ul.tabs
+{
+    padding: 14px 0 8px;
+    margin:0;
+    font-size: 0;
+    list-style-type: none;
+    text-align: center; /*set to left, center, or right to align the tabs as desired*/
+    background: #DDDDE3;
+    border:1px solid #CCC;
+    border-bottom:none;
+    border-radius: 2px 2px 0 0;
+}
+        
+ul.tabs li
+{
+    display: inline;
+    margin: 0;
+    margin-right: 2px;/*distance between tabs*/
+    font: normal 12px Verdana;
+}
+        
+ul.tabs li a
+{
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+    padding: 8px 22px;
+    /*border: 1px solid #16BCA3;*/
+    color: #000;
+    border-radius: 3px 3px 0 0;
+    outline:none;
+}
+  
+        
+ul.tabs li a:hover
+{
+    text-decoration: underline;
+    color: #000;
+}
+        
+ul.tabs li.selected a
+{
+    /*selected tab style */
+    position: relative;
+    top: 0px;
+    font-weight:bold;
+    background: #FFF;
+    border: 1px solid #AAA;
+    border-bottom: 1px solid #FFF;
+    color: #000;
+}
+        
+        
+ul.tabs li.selected a:hover
+{
+    /*selected tab style */
+    text-decoration: none;
+}
+        
+div.tabcontent
+{
+    display: block;
+}
+
+div.tabcontents
+{
+    border: 1px solid #519FD7; padding: 30px;
+    border-top-color:#AAA;
+    background-color:#519FD7;
+    border-radius: 0 0 2px 2px;
+}
+
+#splashevent {
+	background-color: #5C483D;
+	height: 370px;
+	width: 893px;
+}
+#splashevent {
+	background-color: #5C483D;
+	height: 370px;
+	width: 893px;
+}
+#splash_layout {
+	background-color: #000;
+	height: 100%;
+	width: 100%;
+}
+
+#site_layout {
+	background-color: #000;
+	height: 100%;
+	width: 100%;
+}
+
+#sitelayout_2 {
+	background-color: #000;
+	height: 100%;
+	width: 100%;
+}
+
+#sitelaybody_2 {
+	background-color: #519FD7;
+	height: 634px;
+	width: 826px;
+}
+
+#sitecontent_body {
+	background-color: #519FD7;
+	height: 634px;
+	width: 826px;
+}
+
+#sitecontent_2 {
+	background-color: #519FD7;
+	height: 617px;
+	width: 830px;
+}
+
+#site_slider {
+	height: 329px;
+	width: 829px;
+	background-color: #57A2D8;
+}
+
+#site_layout_update {
+	background-color: #519FD7;
+	height: 263px;
+	width: 828px;
+}
+
+#site_layout_slider {
+	background-color: #519FD7;
+	height: 329px;
+	width: 830px;
+}
+
+#site_layout_calendar {
+	background-color: #519FD7;
+	height: 210px;
+	width: 283px;
+}
+
+#site_layout {
+	background-color: #000;
+	height: 100%;
+	width: 100%;
+}
+
+#sitebody_2 {
+	background-color: #519FD7;
+	height: 100%;
+	width: 100%;
+}
+
+/*	--------------------------------------------------
+	Reveal Modals
+	-------------------------------------------------- */
+		
+	.reveal-modal-bg { 
+		position: fixed; 
+		height: 100%;
+		width: 100%;
+		background: #000;
+		background: rgba(0,0,0,.8);
+		z-index: 100;
+		display: none;
+		top: 0;
+		left: 0; 
+		}
+	
+	.reveal-modal {
+		visibility: hidden;
+		top: 100px; 
+		left: 50%;
+		margin-left: -450px;
+		width: 800px;
+		height:400px;
+		background: #eee url(modal-gloss.png) no-repeat -200px -80px;
+		position: absolute;
+		z-index: 101;
+		padding: 30px 40px 34px;
+		-moz-border-radius: 5px;	
+		-webkit-border-radius: 5px;
+		border-radius: 5px;
+		-moz-box-shadow: 0 0 10px rgba(0,0,0,.4);
+		-webkit-box-shadow: 0 0 10px rgba(0,0,0,.4);
+		-box-shadow: 0 0 10px rgba(0,0,0,.4);
+		}
+		
+	.reveal-modal.small 		{ width: 200px; margin-left: -140px;}
+	.reveal-modal.medium 		{ width: 400px; margin-left: -240px;}
+	.reveal-modal.large 		{ width: 600px; margin-left: -340px;}
+	.reveal-modal.xlarge 		{ width: 800px; margin-left: -440px;}
+	
+	.reveal-modal .close-reveal-modal {
+		font-size: 22px;
+		line-height: .5;
+		position: absolute;
+		top: 8px;
+		right: 11px;
+		color: #aaa;
+		text-shadow: 0 -1px 1px rbga(0,0,0,.6);
+		font-weight: bold;
+		cursor: pointer;
+		} 
+	/*
+		
+	NOTES
+	
+	Close button entity is &#215;
+	
+	Example markup
+	
+	<div id="myModal" class="reveal-modal">
+		<h2>Awesome. I have it.</h2>
+		<p class="lead">Your couch.  I it's mine.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultrices aliquet placerat. Duis pulvinar orci et nisi euismod vitae tempus lorem consectetur. Duis at magna quis turpis mattis venenatis eget id diam. </p>
+		<a class="close-reveal-modal">&#215;</a>
+	</div>
+	
+	*/
+
+	#quarter_topright {
+	background-color: #519FD7;
+	height: 326px;
+	width: 606px;
+}
+
+#quarter_topleft {
+	background-color: #519FD7;
+	height: 326px;
+	width: 600px;
+}
+
+#quarter_botright {
+	background-color: #519FD7;
+	height: 305px;
+	width: 606px;
+}
+
+#quarter_botleft {
+	background-color: #519FD7;
+	height: 308px;
+	width: 604px;
+}
+
+#petey_today {
+	background-color: #519FD7;
+	height: 210px;
+	width: 283px;
+}
+
+#petey_layout {
+	background-color: #000;
+	height: 100%;
+	width: 100%;
+}
+
+#petey_email {
+	background-color: #519FD7;
+	height: 107px;
+	width: 283px;
+}
+
+/*
+ * jQuery Nivo Slider v3.0.1
+ * http://nivo.dev7studios.com
+ *
+ * Copyright 2012, Dev7studios
+ * Free to use and abuse under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+ 
+/* The Nivo Slider styles */
+
+.nivoSlider {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.nivoSlider img {
+    display: none;
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+.nivo-main-image {
+    display: block !important;
+    position: relative !important;
+    width: 100% !important;
+}
+.nivoSlider a.nivo-imageLink {
+    border: 0 none;
+    display: none;
+    height: 100%;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 6;
+}
+.nivo-slice {
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 5;
+}
+.nivoSlider a {
+    border: 0 none;
+    display: block;
+}
+.nivo-box {
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    z-index: 5;
+}
+.nivo-box img {
+    display: block;
+}
+.nivo-caption {
+    -moz-box-sizing: border-box;
+    background: none repeat scroll 0 0 #000000;
+    bottom: 0;
+    color: #FFFFFF;
+    display: none;
+    left: 0;
+    opacity: 0.8;
+    overflow: hidden;
+    padding: 5px 10px;
+    position: absolute;
+    width: 100%;
+    z-index: 8;
+}
+.nivo-caption p {
+    margin: 0;
+    padding: 5px;
+}
+.nivo-caption a {
+    display: inline !important;
+}
+.nivo-html-caption {
+    display: none;
+}
+.nivo-directionNav a {
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    z-index: 9;
+}
+.nivo-prevNav {
+    left: 0;
+}
+.nivo-nextNav {
+    right: 0;
+}
+.nivo-controlNav {
+    padding: 15px 0;
+    text-align: center;
+}
+.nivo-controlNav a {
+    cursor: pointer;
+}
+.nivo-controlNav a.active {
+    font-weight: bold;
+}
+
+#navbar_2 {
+	background-color: #519FD7;
+	height: auto;
+	width: auto;
+}
+
+#mailing_2 {
+	background-color: #519FD7;
+	height: 51px;
+	width: 353px;
+}
+
+#eventtable {
+
+}
+
+#contact_2 {
+	background-color: #519FD7;
+	height: 93px;
+	width: 353px;
+}
+
+#chatbox_2 {
+	background-color: #519FD7;
+	height: 217px;
+	width: 353px;
+}
+
+#bigbody_content {
+	background-color: #5AA3D8;
+	height: 626;
+	width: 1209px;
+}
+
+#applicationchair_2 {
+	background-color: #519FD7;
+	height: 35px;
+	width: 353px;
+}
+#chair {
+	background-color: #519FD7;
+	height: 35px;
+	width: 353px;
+}
+
+
+>>>>>>> 57124cdde3d5b8fa7770763c7fba7255e29afcd4
