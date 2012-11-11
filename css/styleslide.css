@@ -59,11 +59,9 @@ ul.sdt_menu li span.sdt_active{
 	height:0px;
 	left:0px;
 	z-index:14;
-	//*added*//
-	display:none; //*added*//
-	font-size:0px; //*added*//
-	overflow: hidden; //*added*//
-	//*added*//
+	display:none;
+	font-size:0px;
+	overflow: hidden;
 	-moz-box-shadow:0px 0px 4px #000 inset;
 	-webkit-box-shadow:0px 0px 4px #000 inset;
 	box-shadow:0px 0px 4px #000 inset;

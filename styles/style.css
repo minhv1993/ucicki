@@ -11,7 +11,7 @@ body {
 	cursor:url('../images/tinkerCursor.cur'),auto;
 }
 #wrapper {
-	width: 1200px;
+	width: 1284px;
 	background:#000;
 	margin: 0 auto;
 }
@@ -51,13 +51,13 @@ body {
 
 #navbar {
 	position:absolute;
-	left:300px;
+	right:0px;
 	top:50px;
 }
 
 #container {
 	position:relative;
-	height: 720px;
+	height: 770px;
 	background-image:url('../images/uciNeverland.png');
 }
 
@@ -215,7 +215,6 @@ a:hover {
 	-o-transform:skew(-20deg,-20deg) rotatey(-50deg);
 	transform:skew(-20deg,-20deg) rotatey(-50deg)
 }
-<<<<<<< HEAD
 
 /*Slider and nav bar */
 ul.sdt_menu{
@@ -279,11 +278,9 @@ ul.sdt_menu li span.sdt_active{
 	height:0px;
 	left:0px;
 	z-index:14;
-	//*added*//
-	display:none; //*added*//
-	font-size:0px; //*added*//
-	overflow: hidden; //*added*//
-	//*added*//
+	display:none;
+	font-size:0px;
+	overflow: hidden;
 	-moz-box-shadow:0px 0px 4px #000 inset;
 	-webkit-box-shadow:0px 0px 4px #000 inset;
 	box-shadow:0px 0px 4px #000 inset;
@@ -387,11 +384,9 @@ ul.sdt_menu li span.sdt_active{
 	height:0px;
 	left:0px;
 	z-index:14;
-	//*added*//
-	display:none; //*added*//
-	font-size:0px; //*added*//
-	overflow: hidden; //*added*//
-	//*added*//
+	display:none; 
+	font-size:0px;
+	overflow: hidden; 
 	-moz-box-shadow:0px 0px 4px #000 inset;
 	-webkit-box-shadow:0px 0px 4px #000 inset;
 	box-shadow:0px 0px 4px #000 inset;
@@ -444,7 +439,6 @@ ul.sdt_menu li div.sdt_box a:hover{
 	color:#fff;
 }
 
-=======
 #todaybox_2 {
 	background-color: #519FD7;
 	height: 210px;
@@ -653,7 +647,7 @@ div.tabcontents
 	
 	.reveal-modal .close-reveal-modal {
 		font-size: 22px;
-		line-height: .5;
+		line-height: 0.5;
 		position: absolute;
 		top: 8px;
 		right: 11px;
@@ -858,7 +852,7 @@ div.tabcontents
 
 #bigbody_content {
 	background-color: #5AA3D8;
-	height: 626;
+	height: 626px;
 	width: 1209px;
 }
 
@@ -872,6 +866,3 @@ div.tabcontents
 	height: 35px;
 	width: 353px;
 }
-
-
->>>>>>> 57124cdde3d5b8fa7770763c7fba7255e29afcd4
