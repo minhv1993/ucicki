@@ -162,3 +162,8 @@ body {
 	-o-transform:skew(-20deg,-20deg) rotatey(-50deg);
 	transform:skew(-20deg,-20deg) rotatey(-50deg)
 }
+#todaybox_2 {
+	background-color: #519FD7;
+	height: 210px;
+	width: 353px;
+}
