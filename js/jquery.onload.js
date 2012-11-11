@@ -70,6 +70,7 @@ $(document).ready(function() {
 			tinkerCursor = false;
 			$("#tinker").css('background-image','url(./images/tinker.gif)');
 		}
+		$('#ppshadow').remove();
 	});
 	
 	$("#chaseShadow").click(function(){
@@ -107,4 +108,11 @@ $(document).ready(function() {
 		}
 	});
 	
+	$('.ChillTip').ChillTip();
+	$('.ChillTip1').ChillTip({ 
+	CTBK:'#300', 
+	}
+	 
+	$("#toTop").click(function(){$("html, body").animate({scrollTop:0}, 1000);});
+	});
 });
